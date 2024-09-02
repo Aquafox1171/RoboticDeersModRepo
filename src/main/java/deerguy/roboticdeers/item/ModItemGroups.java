@@ -15,6 +15,8 @@ public class ModItemGroups {
             Identifier.of(RoboticDeers.MOD_ID, "teraform"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.teraform"))
             .icon(() -> new ItemStack(ModItems.TITANIUM)).entries((dispalyContext, entries) -> {
+
+
                 entries.add(ModItems.TITANIUM);
                 entries.add(ModItems.RAW_TITANIUM);
                 entries.add(ModBlocks.TITANIUM_BLOCK);
@@ -33,6 +35,10 @@ public class ModItemGroups {
 
                 entries.add(ModItems.POTATOBAG);
                 entries.add(ModItems.NUTRITIONBAG);
+
+                entries.add(ModBlocks.GOLDISH_WOOD);
+                entries.add(ModBlocks.GOLDISH_WOOD_STAIRS);
+                entries.add(ModBlocks.GOLDISH_WOOD_SLABS);
             }).build());
 
 

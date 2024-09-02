@@ -15,6 +15,8 @@
 
         @Override
         public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+            BlockStateModelGenerator.BlockTexturePool goldishWoodTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOLDISH_WOOD);
+
             blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SYFAOC);
             blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SYFAOC_RED);
             blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLED_SYFAOC);
@@ -24,7 +26,8 @@
             blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_ORE);
             blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TITANIUM_BLOCK);
 
-
+            goldishWoodTexturePool.stairs(ModBlocks.GOLDISH_WOOD_STAIRS);
+            goldishWoodTexturePool.slab(ModBlocks.GOLDISH_WOOD_SLABS);
         }
 
         @Override

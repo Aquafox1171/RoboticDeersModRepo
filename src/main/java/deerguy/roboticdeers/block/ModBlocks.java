@@ -3,8 +3,10 @@ package deerguy.roboticdeers.block;
 import deerguy.roboticdeers.RoboticDeers;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -21,6 +23,9 @@ public class ModBlocks {
     public static final Block COBBLED_SYFAOC = registerBlock("cobbled_syfaoc", new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(2f)));
     public static final Block COBBLED_SYFAOC_RED = registerBlock("cobbled_syfaoc_red", new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(2.25f)));
     public static final Block MANTAM_ORE = registerBlock("mantam_ore", new Block(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK)));
+    public static final Block GOLDISH_WOOD = registerBlock("goldish_wood", new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(1.25f)));
+    public static final Block GOLDISH_WOOD_STAIRS = registerBlock("goldish_wood_stairs", new StairsBlock(ModBlocks.GOLDISH_WOOD.getDefaultState(), AbstractBlock.Settings.create().strength(1.25f).requiresTool()));
+    public static final Block GOLDISH_WOOD_SLABS = registerBlock("goldish_wood_slabs", new StairsBlock(ModBlocks.GOLDISH_WOOD.getDefaultState(), AbstractBlock.Settings.create().strength(1.25f).requiresTool()));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, Identifier.of(RoboticDeers.MOD_ID,name), block);

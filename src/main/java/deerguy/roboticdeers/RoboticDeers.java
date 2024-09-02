@@ -16,14 +16,19 @@ public class RoboticDeers implements ModInitializer {
 	public static final String MOD_ID = "roboticdeers";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+
+
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		//ModArmorMaterials.registerArmorMaterials();
 
 		FuelRegistry.INSTANCE.add(ModItems.MANTAM_XON_CHARGED, 10);
 		FabricDefaultAttributeRegistry.register(ModEntities.COPPER_ROBOTIC_DEER, CopperRoboticDeerEntity.createCopperRoboticDeerAttributes());
 	}
+
+
 }

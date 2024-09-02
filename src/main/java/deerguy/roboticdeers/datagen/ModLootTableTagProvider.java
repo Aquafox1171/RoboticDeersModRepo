@@ -17,6 +17,7 @@ public class ModLootTableTagProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.TITANIUM_BLOCK);
+        addDrop(ModBlocks.GOLDISH_WOOD);
         addDrop(ModBlocks.RAW_TITANIUM_BLOCK);
         addDrop(ModBlocks.COBBLED_SYFAOC);
         addDrop(ModBlocks.COBBLED_SYFAOC_RED);
@@ -24,5 +25,7 @@ public class ModLootTableTagProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SYFAOC_RED, drops(ModBlocks.SYFAOC_RED, ModBlocks.COBBLED_SYFAOC_RED));
         addDrop(ModBlocks.TITANIUM_ORE, oreDrops(ModBlocks.TITANIUM_ORE, ModItems.RAW_TITANIUM));
         addDrop(ModBlocks.MANTAM_ORE, oreDrops(ModBlocks.MANTAM_ORE, ModItems.MANTAM_SHARD));
+        addDrop(ModBlocks.GOLDISH_WOOD_STAIRS);
+        addDrop(ModBlocks.GOLDISH_WOOD_SLABS, slabDrops(ModBlocks.GOLDISH_WOOD_SLABS));
     }
 }

@@ -14,7 +14,7 @@ public class CopperRoboticDeerModel<T extends CopperRoboticDeerEntity> extends S
 	private final ModelPart head;
 	public CopperRoboticDeerModel(ModelPart root) {
 		this.copperRoboticDeer = root.getChild("copperRoboticDeer");
-		this.head = copperRoboticDeer.getChild("body").getChild("holehead").getChild("head");
+		this.head = copperRoboticDeer.getChild("holehead").getChild("head");
 	}
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();

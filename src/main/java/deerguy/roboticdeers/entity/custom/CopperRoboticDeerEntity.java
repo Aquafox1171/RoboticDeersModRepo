@@ -15,13 +15,14 @@ import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
 public class CopperRoboticDeerEntity extends PassiveEntity {
+
     public CopperRoboticDeerEntity(EntityType<? extends PassiveEntity> entityType, World world) {
         super(entityType, world);
     }
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(0, new LookAtEntityGoal(this, PlayerEntity.class,10000));
+        this.goalSelector.add(0, new LookAtEntityGoal(this, PlayerEntity.class,10000,100,true));
 
     }
 

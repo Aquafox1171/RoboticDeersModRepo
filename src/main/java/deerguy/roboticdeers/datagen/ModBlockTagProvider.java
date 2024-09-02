@@ -28,11 +28,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SYFAOC_RED)
                 .add(ModBlocks.COBBLED_SYFAOC_RED)
                 .add(ModBlocks.COBBLED_SYFAOC);
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.GOLDISH_WOOD)
+        .add(ModBlocks.GOLDISH_WOOD_SLABS)
+        .add(ModBlocks.GOLDISH_WOOD_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TITANIUM_BLOCK)
                 .add(ModBlocks.TITANIUM_ORE)
-                .add(ModBlocks.RAW_TITANIUM_BLOCK);
+                .add(ModBlocks.RAW_TITANIUM_BLOCK)
+                .add(ModBlocks.GOLDISH_WOOD)
+                .add(ModBlocks.GOLDISH_WOOD_SLABS)
+                .add(ModBlocks.GOLDISH_WOOD_STAIRS);
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.SYFAOC)
                 .add(ModBlocks.SYFAOC_RED)
